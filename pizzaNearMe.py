@@ -7,16 +7,16 @@ store = address.closest_store()
 
 menu = store.get_menu()
 
-result = menu.search(Name = 'Pepperoni') # 'Chicken' P10ITHTC     'Pepperoni' 10TPFEAST
+#result = menu.search(Name = 'Bread') # 'Chicken' P10ITHTC     'Pepperoni' 10TPFEAST
 # 'Meat' 14SCMEATZA    'Coke' 2LCOKE     'Cheese' P10IGFCZ
+# 'Parmesan' B8PCPT        
+order1 = Order(store, customer, address)
+order1.add_item('P10IGFCZ')   #Cheese
+order1.add_item('P10ITHTC')   #Chicken
+order1.add_item('10TPFEAST')  #Pepperoni
+order1.add_item('2LCOKE')    #Coke
 
-order = Order(store, customer, address)
-order.add_item('P10IGFCZ')   #Cheese
-order.add_item('P10ITHTC')   #Chicken
-order.add_item('10TPFEAST')  #Pepperoni
-#order.add_item('2LCOKE')    #Coke
-
-#print(order)
+print(order1)
 
 
 
