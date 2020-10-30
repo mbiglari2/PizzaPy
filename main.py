@@ -1,11 +1,5 @@
 from pizzapi import *
 
-#Objects exists in a class
-
-#Classes examples:
-#Customer is a class
-#Object examples: my_store and my_menu
-
 customer = Customer('Blade', 'Nelson', 'powderblock@gmail.com', '4157588103')
 address = Address('75 Westover Ave', 'Ann Arbor', "mi", "48104")
 
