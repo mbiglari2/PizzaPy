@@ -16,7 +16,9 @@ order1.add_item('P10ITHTC')   #Chicken
 order1.add_item('10TPFEAST')  #Pepperoni
 order1.add_item('2LCOKE')    #Coke
 
-print(order1)
+#'customer': <pizzapi.customer.Customer object at 0x00000186E350DDC0>
+
+print(order1.__dict__['data']['Products'])
 
 
 
